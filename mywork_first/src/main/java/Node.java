@@ -2,21 +2,21 @@
  * Created by yz on 2017/5/7.
  */
 public class Node {
-    private int data;
+    private char data;
     private Node lChild;
     private Node rChild;
 
-    public Node(int data,Node lChild,Node rChild){
+    public Node(char data,Node lChild,Node rChild){
         this.data = data;
         this.lChild = lChild;
         this.rChild = rChild;
     }
 
-    public int getData() {
+    public char getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(char data) {
         this.data = data;
     }
 
