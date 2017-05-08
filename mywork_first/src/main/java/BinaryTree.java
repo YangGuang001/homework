@@ -1,27 +1,19 @@
+import lombok.Data;
+
 import java.util.LinkedList;
 import java.util.List;
 
 /**
  * Created by yz on 2017/5/7.
  */
+@Data
 public class BinaryTree {
     private String treeData;
     private Node root;
 
-    public String getTreeData() {
-        return treeData;
-    }
-
-    public void setTreeData(String treeData) {
-        this.treeData = treeData;
-    }
 
     public BinaryTree(Node root){
         this.root = root;
-    }
-
-    public Node getRoot() {
-        return root;
     }
 
     public BinaryTree(String treeData){
@@ -59,7 +51,7 @@ public class BinaryTree {
                                 nodes.get(child);
                                 break;
                             case 'R':
-                                nodes.get(level).setrChild(now);
+                                nodes.get(level).setRChild(now);
                         }
                     }
             }
