@@ -14,8 +14,8 @@ public class ConnectionPoolTest {
     static CountDownLatch end;
 
     public static void main(String[] args) {
-        int threadCount = 10;
-        int count = 100;
+        int threadCount = 100;
+        int count = 1000;
 
         end = new CountDownLatch(threadCount);
         AtomicInteger got = new AtomicInteger();
@@ -57,7 +57,7 @@ public class ConnectionPoolTest {
 
             while (count > 0){
                 try {
-                    Connection connection = pool.fetchConnection(10);
+                    Connection connection = pool.fetchConnection(1000);
                     if (connection != null){
                         try {
                             connection.createStatement();
