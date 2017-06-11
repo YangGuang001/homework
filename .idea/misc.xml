@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/mywork_first/pom.xml" />
         <option value="$PROJECT_DIR$/thread_first/pom.xml" />
+        <option value="$PROJECT_DIR$/jetty_first/pom.xml" />
+        <option value="$PROJECT_DIR$/Zookeeper_first/pom.xml" />
       </list>
     </option>
   </component>
