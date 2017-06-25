@@ -1,3 +1,7 @@
+<span style="font-size:18px;"><%@ page language="java" import="java.util.*" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<%
+response.sendRedirect("login.html");
+%>
 <!DOCTYPE html>
 <html>
 <head>
