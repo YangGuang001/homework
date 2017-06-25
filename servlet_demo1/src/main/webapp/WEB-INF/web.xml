@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>log4jConfigLocation</param-name>
+    <param-value>/WEB-INF/log4j.xml</param-value>
+  </context-param>
+  
+  <listener>
+    <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+  </listener>
+  <!--<servlet>-->
+    <!--<description>This is the description</description>-->
+    <!--<display-name>this is display name</display-name>-->
+    <!--<servlet-name>ServletDemo1</servlet-name>-->
+    <!--<servlet-class>com.yang.learn.ServletDemo1</servlet-class>-->
+  <!--</servlet>-->
+  
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>ServletDemo1</servlet-name>-->
+    <!--<url-pattern>/</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--<filter>-->
+    <!--<filter-name>logfifter</filter-name>-->
+    <!--<filter-class>com.yang.learn.LogFilter</filter-class>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+    <!--<filter-name>logfifter</filter-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+  <servlet>
+    <servlet-name>TestJson</servlet-name>
+    <servlet-class>com.yang.learn.TestJson</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestJson</servlet-name>
+    <url-pattern>/testJson</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PageRedirect</servlet-name>
+    <servlet-class>com.yang.learn.PageRedirect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageRedirect</servlet-name>
+    <url-pattern>/pageRedirect</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Download</servlet-name>
+    <servlet-class>com.yang.learn.Download</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Download</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UploadFile</servlet-name>
+    <servlet-class>com.yang.learn.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadFile</servlet-name>
+    <url-pattern>/UploadFile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SeesionTrack</servlet-name>
+    <servlet-class>com.yang.learn.SessionTrack</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SeesionTrack</servlet-name>
+    <url-pattern>/SeesionTrack</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>setCookie</servlet-name>
+    <servlet-class>com.yang.learn.SetCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setCookie</servlet-name>
+    <url-pattern>/setCookie</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getCookie</servlet-name>
+    <servlet-class>com.yang.learn.GetCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getCookie</servlet-name>
+    <url-pattern>/getCookie</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ErrorHandler</servlet-name>
+    <servlet-class>com.yang.learn.ErrorHandler</servlet-class>
+  </servlet>
+  <!-- servlet mappings -->
+  <servlet-mapping>
+    <servlet-name>ErrorHandler</servlet-name>
+    <url-pattern>/TomcatTest/ErrorHandler</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/TomcatTest/ErrorHandler</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type >
+    <location>/</location>
+  </error-page>
+
+  <session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
+</web-app>
