@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.whtr.bdd.gateway.funtion.features.com.whtr.bdd.gateway.funtion.resources.RunAllTest
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 21, Time elapsed: 0.369 sec

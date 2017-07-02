@@ -1,9 +1,7 @@
 package com.yang.IOTest;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.net.URLConnection;
 
 /**
  * Created by yz on 2017/6/25.
