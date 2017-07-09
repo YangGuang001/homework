@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AntProject" default="Build" basedir=".">
+    <property name="srcDir" location="java" />
+    <property name="binDir" location="ant/bin" />
+    <property name="jarDir" location="ant/jar" />
+    <property name="jarFile" location="${jarDir}/NotePad.jar" />
+    <property name="package" value="com.xiboliya.snowpad" />
+    <property name="mainClass" value="NotePad" />
+    <target name="Init">
+        <delete dir="${binDir}" />
+        <delete dir="${jarDir}" />
+        <mkdir dir="${binDir}" />
+        <mkdir dir="${jarDir}" />
+    </target>
+    <target name="Compile" depends="Init">
+        <javac srcdir="${srcDir}" destdir="${binDir}" />
+    </target>
+    <target name="MakeJar" depends="Init,Compile">
+        <jar destfile="${jarFile}" basedir="${binDir}">
+            <manifest>
+                <attribute name="Main-Class"
+                           value="${package}.${mainClass}" />
+            </manifest>
+        </jar>
+    </target>
+    <target name="Build" depends="Init,Compile,MakeJar">
+        <echo message="Ant is building the project." />
+    </target>
+</project>

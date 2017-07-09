@@ -12,6 +12,10 @@
   <listener>
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
   </listener>
+  
+  <listener>
+    <listener-class>com.yang.startup.MyLister</listener-class>
+  </listener>
   <!--<servlet>-->
     <!--<description>This is the description</description>-->
     <!--<display-name>this is display name</display-name>-->
@@ -39,6 +43,15 @@
   <servlet-mapping>
     <servlet-name>TestJson</servlet-name>
     <url-pattern>/testJson</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HandlerSubmit</servlet-name>
+    <servlet-class>com.yang.learn.HandlerSubmit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HandlerSubmit</servlet-name>
+    <url-pattern>/handlerSubmit</url-pattern>
   </servlet-mapping>
 
   <servlet>
