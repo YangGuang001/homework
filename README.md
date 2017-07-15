@@ -1,7 +1,7 @@
 # homework
-my homework
-
-
-
-this is container.
-
+- jps 虚拟机进程状况工具  主要用来查看使用java运行的进程
+- jstat 虚拟机统计信息监控工具  可以显示类装载、内存、垃圾收集等情况。
+- jinfo java 进程配置信息，查看和调整虚拟机各项配置参数。
+- jmap java内存映像  可以生成进程快照堆，outMemory，gc问题类型的错误。
+- jhat 虚拟机堆转储快照分析工具 主要用来分析jmap生成的文件。
+- jstack 堆栈跟踪工具，主要分析线程间死锁等问题。
