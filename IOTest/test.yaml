@@ -1,0 +1,13 @@
+--- !com.yang.yaml.Person
+age: 18
+children: 
+  - !com.yang.yaml.Person
+    age: 18
+    name: zhao
+    sex: 女
+  - !com.yang.yaml.Person
+    age: 2
+    name: xin
+    sex: 男
+name: yang
+sex: 男

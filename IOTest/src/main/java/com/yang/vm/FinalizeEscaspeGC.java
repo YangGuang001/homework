@@ -1,5 +1,7 @@
 package com.yang.vm;
 
+import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
+
 /**
  * Created by yz on 2017/7/9.
  */
