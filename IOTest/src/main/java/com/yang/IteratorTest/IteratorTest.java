@@ -2,9 +2,6 @@ package com.yang.IteratorTest;
 
 import java.util.*;
 
-/**
- * Created by yz on 2017/6/27.
- */
 public class IteratorTest {
     public static void main(String[] args) {
         Map<String,String> map = new HashMap<String, String>();
