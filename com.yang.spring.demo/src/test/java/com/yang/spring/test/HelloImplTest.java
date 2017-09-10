@@ -1,5 +1,6 @@
 package com.yang.spring.test;
 
+import com.yang.spring.springExtension.Animal;
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -28,9 +29,24 @@ public class HelloImplTest {
 
     @Test
     public void testBean(){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("DependenceBean.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("extension.xml");
+        Animal animal = (Animal) applicationContext.getBean("animal");
+        animal.move();
+    }
 
-        DependentBean bean = (DependentBean) applicationContext.getBean("dependentBean");
-
+    @Test
+     public void testLookup() {
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("aotowired.xml");
+        System.out.println("=======singleton sayHello======");
+        HelloApi helloApi1 = context.getBean("hello", HelloApi.class);
+        helloApi1.say();
+        helloApi1 = context.getBean("hello", HelloApi.class);
+        helloApi1.say();
+        System.out.println("=======prototype sayHello======");
+        HelloApi helloApi2 = context.getBean("hello2", HelloApi.class);
+        helloApi2.say();
+        helloApi2 = context.getBean("hello2", HelloApi.class);
+        helloApi2.say();
     }
 }
