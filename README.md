@@ -15,3 +15,4 @@
 - 使用static的时候需要考虑线程安全的问题，因为这个变量时全局共享的，存在两个线程对同一个全局变量做操作，产生错误，应该使用ThreadLocal
 - REST使用URL来访问资源的一种方式，平常常见的集中请求方式是GET和POST，但是REST有提出了其他几种类型的请求方式，比较常见的请求方式  
 GET 和POST、PUT、DELETE、HEAD、OPTIONS，尤其前面的四种正好与CRUD(增删改查)四种操作对应，GET(查)、POST(增)、PUT(改)、DELETE（删）。
+

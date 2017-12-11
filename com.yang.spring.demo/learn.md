@@ -1,0 +1,7 @@
+ControllerClassNameHandlerMapping  AbstractController
+SimpleUrlHandlerMapping AbstractController
+DefaultAnnotationHandlerMapping
+BeanNameUrlHandlerMapping  MultiActionController
+ControllerBeanNameHandlerMapping
+
+对应请求的
