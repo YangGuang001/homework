@@ -18,7 +18,7 @@
         <property name="defaultAutoCommit" value="true"/>
     </bean>
 
-    <!-- 配置session工厂 -->
+     <!--配置session工厂 -->
     <bean class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" id="session">
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan" value="com.yang.springmvc.entity"/>
@@ -52,4 +52,6 @@
     <bean id="studentJdbc" class="com.yang.springmvc.dao.StudentJDBCTemplate">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
+    <import resource="classpath:testRemote-servlet.xml"/>
 </beans>

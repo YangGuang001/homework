@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="remote" class="com.yang.springmvc.httpremotecall.RemoteServiceImpl" />
+    <bean name="/remoteService" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+        <property name="service" ref="remote"/>
+        <property name="serviceInterface" value="com.yang.springmvc.httpremotecall.IRemoteService"/>
+    </bean>
+</beans>
