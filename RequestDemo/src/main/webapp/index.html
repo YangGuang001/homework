@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+<script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#testJson").click(function () {
+            var url = this.href();
+            var args = {};
+            $.post(url, args, function (data) {
+                for (var i=0; i<data.length; i++) {
+                    var id = data[i].id;
+                    var lastName = data[i].lastName;
+                    alert(id + ": " + lastName);
+                }
+            });
+            return false;
+        })
+    })
+</script>
+
+<body>
+
+<a href="http://localhost:8080/testHandlerException?id=0">testHandlerException</a>
+
+<br>
+<form action="http://localhost:8080/testFileUpload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <input type="text" name="name"/>
+    <input type="submit" value="Test UPDATE"/>
+</form>
+
+
+<a href="http://localhost:8080/testResponseEntity">testResponseEntity</a>
+<br>
+
+<a href="http://localhost:8080/testJson" id="testJson">TestJson</a>
+<br>
+<a href="http://localhost:8080/emps">list All employee</a>
+<br><br>
+<a href="http://localhost:8080/testRedirect">testRedirect</a>
+<br><br>
+<a href="http://localhost:8080/testExeclView">testExeclView</a>
+<br><br>
+<a href="http://localhost:8080/testCustomerView">testCustomerView</a>
+<br><br>
+<a href="http://localhost:8080/success">success</a>
+<br><br>
+<a href="http://localhost:8080/testJstl">testJstl</a>
+<br>
+<a href="http://localhost:8080/testJstl?locale=zh_CN">??</a>
+<br>
+<a href="http://localhost:8080/testJstl?locale=en_US">??</a>
+<br>
+<form action="http://localhost:8080/testModelAttribute" method="post">
+    <input type="text" name="id" value="1" hidden="hidden"/>
+    username :<input type="text" name="username" value="yang"/>
+    age : <input type="text" name="age" value="18"/>
+    <input type="submit" value="Submit"/>
+</form>
+<br><br>
+<a href="http://localhost:8080/testMap">testMap</a>
+<br><br>
+<a href="http://localhost:8080/testModelAndView">testModelAndView</a>
+<br><br>
+<form action="http://localhost:8080/testPojo" method="post">
+    username :<input type="text" name="username"/>
+    age : <input type="text" name="age"/>
+    privince : <input type="text" name="address.privince"/>
+    city : <input type="text" name="address.city"/>
+    <input type="submit" value="Submit"/>
+</form>
+<br><br>
+<a href="http://localhost:8080/testCookieParams">testCookieParams</a>
+<br><br>
+<a href="http://localhost:8080/testRequestHeads">testRequestHeads</a>
+<br><br>
+<a href="http://localhost:8080/testRequestParams?username=yangxinzhao&age=10">testRequestParams</a>
+<br><br>
+<form action="/testPOST" method="post">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <input type="submit" value="Test DELETE"/>
+</form>
+<br><br>
+<form action="/testPOST" method="post">
+    <input type="hidden" name="_method" value="UPDATE"/>
+    <input type="submit" value="Test UPDATE"/>
+</form>
+<form action="/testPOST" method="post">
+    <input type="submit" value="Test POST">
+</form>
+<br><br>
+<a href="testGet/1">Test Get</a>
+<br><br>
+<a href="/testParams?username=yangxinzhao&age=10">testParams</a>
+<br><br>
+</body>
+</html>
