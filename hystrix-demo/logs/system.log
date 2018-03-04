@@ -1,0 +1,441 @@
+2018-02-25 18:43:50,614 WARN  [GTO] [com.netflix.config.sources.URLConfigurationSource]   No URLs will be polled as dynamic configuration sources.
+2018-02-25 18:43:50,617 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-02-25 18:43:50,635 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6be46e8f
+2018-02-25 18:44:57,942 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 18:44:57,966 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 18:52:05,085 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 18:52:05,103 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 19:28:12,020 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 19:28:12,055 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 19:48:07,291 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 19:48:07,312 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 19:53:43,515 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 19:53:43,539 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 19:54:47,696 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 19:54:47,722 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 19:55:15,134 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 19:55:15,173 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@48aaecc3
+2018-02-25 20:03:17,644 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:03:17,685 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 20:03:36,537 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:03:36,556 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3a03464
+2018-02-25 20:04:06,548 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:04:15,066 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:04:15,080 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 20:04:45,075 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:04:49,616 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:04:49,640 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 20:05:05,314 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:05:05,333 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 20:05:06,555 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:05:45,082 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:06:06,561 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:06:45,088 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:07:06,568 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:07:45,095 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:08:06,575 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:08:45,102 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:09:06,581 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:09:45,109 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:10:06,588 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:10:08,106 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:10:08,131 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 20:10:38,120 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:10:45,116 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:11:06,594 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:11:38,127 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:11:45,123 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:12:06,601 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:12:38,134 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:12:45,130 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:13:06,608 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:13:38,141 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:13:45,136 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:14:06,615 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:14:38,148 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:14:45,143 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:15:06,622 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:15:45,150 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:16:06,629 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:16:45,157 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:17:06,636 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:17:45,164 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:18:06,642 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:18:45,171 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:19:06,649 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:19:45,178 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:20:06,656 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:20:45,185 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:21:06,663 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:21:45,192 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:22:06,670 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:22:45,199 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:23:06,677 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:23:45,206 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:24:06,684 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:24:45,213 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:25:06,691 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:25:45,220 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:26:06,698 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:26:45,227 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:27:06,705 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:27:45,234 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:28:06,712 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:28:45,241 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:29:06,719 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:29:45,248 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:30:06,726 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:30:45,255 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:31:06,733 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:31:45,262 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:32:06,740 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:32:45,269 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:33:06,747 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:33:45,276 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:34:06,754 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:34:45,283 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:35:06,761 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:35:45,290 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:36:06,768 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:36:45,297 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:37:06,775 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:37:45,304 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:38:06,834 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:38:45,311 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:39:06,841 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:39:45,318 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:40:06,848 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:40:45,325 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:41:06,855 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:41:45,332 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:42:06,862 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:42:45,339 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:43:06,869 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:43:45,346 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:44:06,876 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:44:31,689 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:44:31,718 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 20:44:45,353 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:45:06,883 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:45:40,852 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:45:40,880 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4909b8da
+2018-02-25 20:45:45,360 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:46:06,890 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:46:45,367 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:47:06,897 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:47:45,374 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:48:06,904 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:48:43,845 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:48:43,868 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@90f6bfd
+2018-02-25 20:48:45,381 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:49:06,911 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:49:15,160 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:49:15,191 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@56528192
+2018-02-25 20:49:45,387 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:50:06,918 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:50:45,394 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:50:47,458 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:50:47,480 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@90f6bfd
+2018-02-25 20:51:06,925 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:51:22,050 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 20:51:22,079 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@15975490
+2018-02-25 20:51:45,401 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:52:06,932 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:52:45,408 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:53:06,939 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:53:45,415 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:54:06,946 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:54:45,422 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:55:06,952 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:55:45,429 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:56:06,959 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:56:45,436 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:57:06,966 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:57:45,475 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:58:06,975 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:58:45,482 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:59:06,982 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 20:59:45,489 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:00:07,060 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:00:45,496 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:01:07,067 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:01:45,503 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:02:07,074 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:02:45,510 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:03:07,081 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:03:45,517 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:04:07,088 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:04:45,524 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:05:07,095 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:05:45,531 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:06:07,102 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:06:30,690 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 21:06:30,718 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2c9f9fb0
+2018-02-25 21:06:45,615 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:07:00,748 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:07:07,119 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:07:45,648 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:08:00,772 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:08:07,180 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:08:45,720 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:09:00,807 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:09:07,219 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:09:45,804 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:10:00,847 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:10:07,242 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:10:45,810 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:11:07,248 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:11:45,817 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:12:07,255 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:12:45,824 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:13:07,262 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:13:45,831 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:14:07,269 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:14:45,838 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:15:07,276 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:15:45,845 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:16:07,283 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:16:45,852 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:17:07,290 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:17:45,859 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:18:07,297 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:18:45,866 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:19:07,304 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:19:45,873 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:20:07,311 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:20:45,880 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:21:07,318 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:21:45,887 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:22:07,325 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:22:45,894 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:23:07,332 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:23:45,901 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:24:07,339 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:24:45,908 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:25:07,346 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:25:45,915 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:26:07,353 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:26:45,922 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:27:07,360 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:27:45,929 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:28:07,367 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:28:45,936 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:29:07,374 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:29:45,943 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:30:07,381 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:30:45,950 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:31:07,388 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:31:45,957 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:32:07,395 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:32:45,964 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:33:07,402 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:33:19,057 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 21:33:19,101 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2c9f9fb0
+2018-02-25 21:33:45,971 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:34:07,409 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:34:45,978 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:35:07,416 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:35:15,842 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 21:35:15,871 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2c9f9fb0
+2018-02-25 21:35:45,856 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:35:45,985 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:36:07,423 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:36:24,453 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 21:36:24,477 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2c9f9fb0
+2018-02-25 21:36:45,992 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:37:07,430 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:37:45,999 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:38:07,437 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:38:46,006 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:39:07,444 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:39:46,013 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:40:07,451 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:40:46,020 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:41:07,457 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:41:46,027 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:42:07,464 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:42:46,034 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:43:07,471 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:43:46,041 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:44:07,478 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:44:46,047 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:45:07,485 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:45:46,054 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:46:07,492 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:46:46,061 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:47:07,499 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:47:46,068 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:48:07,506 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:48:46,075 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:49:07,513 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:49:46,082 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:50:07,520 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:50:46,089 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:51:07,527 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:51:46,096 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:52:07,534 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:52:46,103 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:53:07,541 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:53:46,110 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:54:07,548 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:54:46,117 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:55:07,555 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:55:46,124 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:56:07,562 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:56:46,131 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:57:07,569 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:57:46,138 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:58:07,576 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:58:46,145 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:59:07,583 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 21:59:46,152 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:00:07,590 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:00:46,159 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:01:07,597 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:01:46,166 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:02:07,604 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:02:46,173 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:03:07,611 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:03:46,180 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:04:07,618 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:04:46,187 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:05:07,624 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:05:46,194 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:06:07,631 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:06:46,201 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:07:07,638 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:07:46,208 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:08:07,645 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:08:46,215 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:09:07,652 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:09:46,222 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:10:07,659 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:10:46,229 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:11:07,666 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:11:46,236 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:12:07,673 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:12:46,242 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:13:07,680 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:13:46,249 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:14:07,687 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:14:46,256 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:15:07,694 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:15:46,263 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:16:07,701 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:16:46,270 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:17:07,708 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:17:46,277 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:18:07,715 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:18:46,283 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:19:07,722 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:19:46,290 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:20:07,728 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:20:46,297 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:21:07,735 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:21:46,304 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:22:07,742 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:22:46,310 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:23:07,749 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:23:46,317 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:24:07,756 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:24:46,324 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:25:07,763 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:25:46,331 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:26:07,770 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:26:46,338 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:27:07,777 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:27:46,345 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:28:07,784 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:28:46,352 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:29:07,791 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:29:46,359 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:30:07,798 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:30:46,366 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:31:07,805 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:31:46,373 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:32:07,812 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:32:46,380 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:33:07,819 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:33:46,387 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:34:07,826 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:34:46,394 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:35:07,833 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:35:46,401 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:36:07,840 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:36:46,408 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:37:07,847 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:37:46,415 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:38:07,854 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:38:46,422 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:39:07,861 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:39:46,429 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:40:07,868 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:40:46,436 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:41:07,875 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:41:46,443 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:42:07,882 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:42:46,450 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:43:07,889 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:43:46,457 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:44:07,896 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:44:46,464 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:45:07,902 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:45:46,471 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:46:07,909 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:46:46,477 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:47:07,916 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:47:46,484 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:48:07,922 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:48:46,491 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:48:58,065 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 22:48:58,098 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@12e492c7
+2018-02-25 22:49:07,929 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:49:28,081 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:49:46,498 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:50:07,936 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:50:28,088 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:50:46,505 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:51:07,943 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:51:28,095 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:51:41,053 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 22:51:41,085 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@71dda455
+2018-02-25 22:51:46,512 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:52:07,950 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:52:11,070 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:52:28,102 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:52:46,519 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:53:07,957 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:53:11,077 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:53:28,109 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:53:46,526 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:54:07,964 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:54:22,943 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 22:54:22,980 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@477f087a
+2018-02-25 22:54:52,966 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:55:17,217 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 22:55:17,252 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1d4f7434
+2018-02-25 22:55:57,374 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 22:55:57,417 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1a9a71d7
+2018-02-25 22:56:27,391 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:57:27,398 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:58:27,405 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 22:59:27,412 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:00:27,419 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:01:27,426 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:02:27,433 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:02:31,271 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 23:02:31,290 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2d3fcdbd
+2018-02-25 23:03:27,440 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:03:53,205 INFO  [GTO] [com.netflix.config.sources.URLConfigurationSource]   URLs to be used as dynamic configuration source: [file:/E:/java/homework/homework/hystrix-demo/target/classes/config.properties]
+2018-02-25 23:03:53,239 INFO  [GTO] [com.netflix.config.DynamicPropertyFactory]   DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2d3fcdbd
+2018-02-25 23:04:27,447 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:05:27,453 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:06:27,460 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:07:27,467 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:08:27,474 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:09:27,481 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:10:27,488 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:11:27,495 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:12:27,502 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:13:27,509 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
+2018-02-25 23:14:27,516 DEBUG [GTO] [com.netflix.config.AbstractPollingScheduler]   Polling started
