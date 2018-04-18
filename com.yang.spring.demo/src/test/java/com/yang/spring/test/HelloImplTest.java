@@ -12,9 +12,13 @@ import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.GenericWebApplicationContext;
+import org.springframework.web.context.support.XmlWebApplicationContext;
 
 import java.io.File;
 
@@ -56,8 +60,17 @@ public class HelloImplTest {
 
     @Test
     public void testBean(){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("extension.xml");
-        Animal animal = (Animal) applicationContext.getBean("animal");
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("extension.xml");
+//        XmlWebApplicationContext xmlWebApplicationContext = new XmlWebApplicationContext();
+//        xmlWebApplicationContext.start();
+//        GenericApplicationContext genericApplicationContext = new GenericApplicationContext(applicationContext);
+//        GenericWebApplicationContext webApplicationContext = new GenericWebApplicationContext(genericApplicationContext.getDefaultListableBeanFactory());
+//        webApplicationContext.refresh();
+
+        XmlWebApplicationContext webApplicationContext = new XmlWebApplicationContext();
+        webApplicationContext.setConfigLocation("classpath:*.xml");
+        webApplicationContext.refresh();
+        Animal animal = (Animal) webApplicationContext.getBean("animal");
         animal.move();
     }
 

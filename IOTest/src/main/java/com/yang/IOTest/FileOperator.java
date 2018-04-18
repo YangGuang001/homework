@@ -1,7 +1,10 @@
 package com.yang.IOTest;
 
+import org.junit.Test;
+
 import java.io.*;
 import java.net.URLConnection;
+import java.util.ArrayList;
 
 /**
  * Created by yz on 2017/6/25.
@@ -35,5 +38,10 @@ public class FileOperator {
         }
 
         return stringBuffer.toString();
+    }
+
+    @Test
+    public void testIsAsserFrom() {
+        System.out.println(Object.class.isAssignableFrom(ArrayList.class));
     }
 }

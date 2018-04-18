@@ -11,6 +11,8 @@ public class SpringbootHelloApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.setProperty("test.demo", "222222");
+		System.out.println(Integer.getInteger("test.demo", 111111));
 	}
 
 }
