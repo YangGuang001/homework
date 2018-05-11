@@ -7,8 +7,32 @@
     <groupId>com.yang.restTemplate</groupId>
     <artifactId>resttemplate-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
@@ -21,53 +45,20 @@
             <version>1.2.0.RELEASE</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
         <dependency>
-            <groupId>com.netflix.servo</groupId>
-            <artifactId>servo-core</artifactId>
-            <version>0.10.1</version>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib-ext-spring -->
         <dependency>
-            <groupId>com.netflix.ribbon</groupId>
-            <artifactId>ribbon</artifactId>
-            <version>2.2.0</version>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib-ext-spring</artifactId>
+            <version>1.0.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.8.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.netflix.servo</groupId>
-            <artifactId>servo-internal</artifactId>
-            <version>0.10.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-context</artifactId>
-            <version>1.3.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-commons</artifactId>
-            <version>1.1.7.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
-            <version>1.4.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-core</artifactId>
-            <version>1.4.0.RELEASE</version>
-        </dependency>
 
     </dependencies>
 

@@ -1,67 +1,48 @@
 package com.yang.resttemplate;
 
-import com.netflix.servo.DefaultMonitorRegistry;
-import org.springframework.beans.factory.SmartInitializingSingleton;
-import org.springframework.cloud.client.loadbalancer.*;
-import org.springframework.cloud.netflix.metrics.DefaultMetricsTagProvider;
-import org.springframework.cloud.netflix.metrics.MetricsClientHttpRequestInterceptor;
-import org.springframework.cloud.netflix.metrics.MetricsTagProvider;
-import org.springframework.cloud.netflix.metrics.servo.ServoMonitorCache;
-import org.springframework.cloud.netflix.ribbon.RibbonClientSpecification;
-import org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient;
-import org.springframework.cloud.netflix.ribbon.SpringClientFactory;
-import org.springframework.http.client.ClientHttpRequestInterceptor;
-import org.springframework.retry.support.RetryTemplate;
+
+
+import net.sf.json.JSONObject;
+import org.junit.Test;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
-/**
- * Created by yz on 2018/3/10.
- */
 public class TestRestTemplate {
-    public static void main(String[] args) {
-        SpringClientFactory factory = new SpringClientFactory();
-//        List<RibbonClientSpecification> list = new ArrayList<RibbonClientSpecification>();
-//        list.add(new RibbonClientSpecification());
-//        factory.setConfigurations(list);
-
-        LoadBalancerClient loadBalanced = new RibbonLoadBalancerClient(factory);
-        List<LoadBalancerRequestTransformer> transformers = Collections.emptyList();
-        LoadBalancerRequestFactory requestFactory = new LoadBalancerRequestFactory(loadBalanced, transformers);
-
-        final LoadBalancerInterceptor interceptor = new LoadBalancerInterceptor(loadBalanced, requestFactory);
-        final RetryLoadBalancerInterceptor retryLoadBalancerInterceptor = new RetryLoadBalancerInterceptor(loadBalanced,
-                retryTemplate(), new LoadBalancerRetryProperties(), new LoadBalancedRetryPolicyFactory.NeverRetryFactory(),
-                requestFactory);
-
-
-//        final RestTemplateCustomizer restTemplateCustomizer = new RestTemplateCustomizer() {
-//            public void customize(RestTemplate restTemplate) {
-//                List<ClientHttpRequestInterceptor> list = new ArrayList<ClientHttpRequestInterceptor>();
-//                list.add(retryLoadBalancerInterceptor);
-//                restTemplate.setInterceptors(list);
-//            }
-//        };
-
-
-//        System.out.println(restTemplateCustomizer.toString());
-
+    @Test
+    public void testHttpEntity() {
         RestTemplate restTemplate = new RestTemplate();
-        List<ClientHttpRequestInterceptor> list = new ArrayList<ClientHttpRequestInterceptor>();
-        list.add(retryLoadBalancerInterceptor);
-        restTemplate.setInterceptors(list);
-        String string = restTemplate.getForObject("http://localhost:8020/1", String.class);
-        System.out.println(string);
+        User user = new User();
+        user.setAge(18);
+        user.setId(1111L);
+        user.setName("yang");
+        HttpHeaders headers = new HttpHeaders();
+        MediaType type = MediaType.parseMediaType("application/json; charset=UTF-8");
+        headers.setContentType(type);
+        headers.add("Accept", MediaType.APPLICATION_JSON.toString());
 
+        JSONObject jsonObject = JSONObject.fromObject(user);
+
+        HttpEntity<String> formEntity = new HttpEntity<String>(jsonObject.toString(), headers);
+        ResponseEntity<String> result = restTemplate.postForEntity("http://localhost:8020/1", formEntity, String.class);
+        if (result.getStatusCode().is2xxSuccessful()) {
+            System.out.println(result.getBody());
+        }
     }
 
-    public static RetryTemplate retryTemplate() {
-        RetryTemplate template =  new RetryTemplate();
-        template.setThrowLastExceptionOnExhausted(true);
-        return template;
+
+    @Test
+    public void testGetForObject() {
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> params = new HashMap<>();
+        params.put("age", "26");
+        params.put("name", "lee");
+        User result = restTemplate.getForObject("http://localhost:8020/params?name={name}&age={age}", User.class, params);
+        System.out.println(result.toString());
     }
 }

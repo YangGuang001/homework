@@ -6,6 +6,7 @@ import com.yang.springmvc.entity.User;
 import com.yang.springmvc.view.ExeclView;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.*;
@@ -159,5 +160,11 @@ public class RequestController {
     public String testRedirect() {
         System.out.println("/testRedirect");
         return "redirect:index.html";
+    }
+
+    @RequestMapping(value = "/testMyRestTemplate")
+    public String testMyRestTemplate() {
+        RestTemplate restTemplate = MyRestTemplate.create();
+        return SUCCESS;
     }
 }
