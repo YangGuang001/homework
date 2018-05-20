@@ -5,6 +5,8 @@ import com.yang.springboot.hello.enable.demo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,7 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 @EnableLogInfo(name = "onlySale")
-public class SpringbootHelloApplication {
+public class SpringbootHelloApplication  extends SpringBootServletInitializer {
 
 	@Autowired
 	private Hello hello;
@@ -47,5 +49,10 @@ public class SpringbootHelloApplication {
 //		System.out.println(context.getBean(MyImportSelector.class));
 //		System.out.println(context.getBean(Market.class));
 //		System.out.println(context.getBean(Sales.class));
+	}
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(SpringbootHelloApplication.class);
 	}
 }

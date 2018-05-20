@@ -1,4 +1,4 @@
-package com.yang.springboot.hello;
+package com.yang.sprinboot;
 
 import lombok.extern.apachecommons.CommonsLog;
 import org.junit.Test;
@@ -9,11 +9,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @CommonsLog
-public class SpringbootHelloApplicationTests {
+public class test {
 
-	@Test
-	public void contextLoads() {
-		log.info("test yangxin");
-	}
+    @Test
+    public void testSequence() {
 
+       log.info("test yangxinzhao");
+    }
 }
