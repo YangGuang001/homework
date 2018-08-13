@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+                     debug="false">
+    <appender name="SYSTEM" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="logs/system.log"/>
+        <param name="Append" value="true"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [GTO] [%c] %X{MSISDN} %X{IMEI} %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <param name="Threshold" value="INFO"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c{1}] %m%n" />
+        </layout>
+    </appender>
+
+    <!-- 输出到日志文件  -->
+    <appender name="log4jTestDebug" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="/log/debug.log"/>
+        <param name="Append" value="true"/>
+        <param name="MaxFileSize" value="5KB"/>
+        <param name="MaxBackupIndex" value="2"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%c %d{ISO8601}-- %p -- %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="DEBUG"/>
+            <param name="LevelMax" value="DEBUG"/>
+        </filter>
+    </appender>
+
+    <appender name="log4jTestLogInfo" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="/log/info.log"/>
+        <param name="Append" value="true"/>
+        <param name="MaxFileSize" value="5KB"/>
+        <param name="MaxBackupIndex" value="2"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%c %d{ISO8601}-- %p -- %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="INFO"/>
+            <param name="LevelMax" value="INFO"/>
+        </filter>
+
+    </appender>
+
+    <!--通过<category></category>的定义可以将各个包中的类日志输出到不同的日志文件中-->
+    <category name="com.yang.netty.test">
+        <priority value="DEBUG" />
+        <appender-ref ref="CONSOLE" />
+    </category>
+
+    <!--
+        定义全局的日志输出级别,但是在输出目的地的配置中配置的具体输出级别优先级高于全局定义的优先级。
+        如果在railyFile中定义<param name="Threshold" value="info"></param>，那么将会把info以上级别的信息输出
+     -->
+    <root>
+        <priority value="all"/>
+    </root>
+
+</log4j:configuration>
