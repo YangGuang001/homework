@@ -13,7 +13,28 @@
   <!--<constructor-arg index="1" value="yang"/>-->
  <!--</bean>-->
    <bean id="bean" class="com.yang.spring.test.HelloImpl">
-    <property name="age" value="18"/>
-    <property name="name" value="yang"/>
+    <!--<property name="age" value="18"/>-->
+    <!--<property name="name" value="yang"/>-->
+       <property name="date" value="2018-08-11"/>
    </bean>
+
+    <!--<bean id="editorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
+        <!--<property name="customEditors">-->
+            <!--<map>-->
+                <!--<entry key="java.util.Date">-->
+                    <!--<bean class="com.yang.spring.test.DatePropertyEditor">-->
+                        <!--<property name="format" value="yyyy-MM-dd"/>-->
+                    <!--</bean>-->
+                <!--</entry>-->
+            <!--</map>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="propertyEditorRegistrars">
+            <list>
+                <bean class="com.yang.spring.test.DatePropertyEditorRegistrar" />
+            </list>
+        </property>
+    </bean>
  </beans>

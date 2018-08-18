@@ -1,10 +1,7 @@
 package com.yang.netty.test;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelPipeline;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -36,6 +33,7 @@ public class Server {
         ServerBootstrap b = new ServerBootstrap();
         b.group(bossGroup, workerGroup);
         b.channel(NioServerSocketChannel.class);
+        b.handler(new SimpleServerHandler());
         b.childHandler(new ChannelInitializer<SocketChannel>() {
             @Override
             public void initChannel(SocketChannel ch) throws Exception {
@@ -69,5 +67,39 @@ public class Server {
 
     public static void main(String[] args) throws Exception {
         new Server().run();
+    }
+
+    private static class SimpleServerHandler extends ChannelInboundHandlerAdapter {
+        @Override
+        public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
+            System.out.println("SimpleServerHandler channelRegistered");
+        }
+
+        @Override
+        public void channelActive(ChannelHandlerContext ctx) throws Exception {
+            System.out.println("SimpleServerHandler channelActive");
+        }
+
+        @Override
+        public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
+            System.out.println("SimpleServerHandler handlerAdded");
+        }
+    }
+
+    private static class SecondServerHandler extends ChannelInboundHandlerAdapter {
+        @Override
+        public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
+            System.out.println("SecondServerHandler channelRegistered");
+        }
+
+        @Override
+        public void channelActive(ChannelHandlerContext ctx) throws Exception {
+            System.out.println("SecondServerHandler channelActive");
+        }
+
+        @Override
+        public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
+            System.out.println("SecondServerHandler handlerAdded");
+        }
     }
 }

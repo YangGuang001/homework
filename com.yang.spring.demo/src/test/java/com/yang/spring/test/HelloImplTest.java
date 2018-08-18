@@ -7,6 +7,7 @@ import com.yang.spring.demo.ExampleInitBean;
 import com.yang.spring.springExtension.Animal;
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.config.CustomEditorConfigurer;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -20,7 +21,11 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 
+import java.beans.PropertyEditor;
 import java.io.File;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by yz on 2017/8/17.
@@ -41,21 +46,34 @@ public class HelloImplTest {
 //        Resource resource = new FileSystemResource(file);
 //        BeanFactory beanFactory = new XmlBeanFactory(resource);
 
-//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("hello.xml");
-//        HelloImpl hello = (HelloImpl) applicationContext.getBean("bean",HelloApi.class);
-//        hello.say();
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("hello.xml");
+        HelloImpl hello = (HelloImpl) applicationContext.getBean("bean",HelloApi.class);
+        hello.say();
 
 //        Resource resource = new ClassPathResource("hello.xml");
 //        XmlBeanFactory xmlBeanFactory = new XmlBeanFactory(resource);
 //        HelloImpl hello = (HelloImpl) xmlBeanFactory.getBean("bean");
 //        hello.say();
 
-        ClassPathResource resource = new ClassPathResource("hello.xml");
-        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
-        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
-        reader.loadBeanDefinitions(resource);
-        HelloImpl hello = (HelloImpl) factory.getBean("bean");
-        hello.say();
+//        ClassPathResource resource = new ClassPathResource("hello.xml");
+//        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+//        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
+//        reader.loadBeanDefinitions(resource);
+//
+//        CustomEditorConfigurer configurer = new CustomEditorConfigurer();
+//
+//        DatePropertyEditor datePropertyEditor = new DatePropertyEditor();
+//        datePropertyEditor.setFormat("yyyy-MM-dd");
+//
+//        Map customerEditors = new HashMap();
+//        customerEditors.put(Date.class, datePropertyEditor);
+//
+//        configurer.setCustomEditors(customerEditors);
+//
+//        configurer.postProcessBeanFactory(factory);
+//
+//        HelloImpl hello = (HelloImpl) factory.getBean("bean");
+//        hello.say();
     }
 
     @Test
