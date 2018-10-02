@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.security.*;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
+import java.util.Enumeration;
 
 /**
  * Created by yz on 2018/2/14.
@@ -47,14 +48,26 @@ public class TestJks {
     @Test
     public void TestKeyStore() {
         try {
-            Resource resource = new ClassPathResource("server.keystore");
+            Resource resource = new ClassPathResource("client1.keystore");
             KeyStore keyStore = KeyStore.getInstance("JKS");
             keyStore.load(resource.getInputStream(), "123456".toCharArray());
+
+            Enumeration<String> enumeration = keyStore.aliases();
+            while (enumeration.hasMoreElements()) {
+                String keyAliase = enumeration.nextElement();
+                if (keyStore.isKeyEntry(keyAliase)) {
+                    System.out.println("is same keyAliase:" + keyAliase);
+                }
+            }
+
+
             Certificate certificate = keyStore.getCertificate("server");
+
+
             PublicKey publicKey = certificate.getPublicKey();
             System.out.println("提取的公钥为___:\\n" + encodeBase64(publicKey.toString()));
 
-            PrivateKey privateKey = (PrivateKey) keyStore.getKey("server", "123456".toCharArray());
+            PrivateKey privateKey = (PrivateKey) keyStore.getKey("client", "123456".toCharArray());
             System.out.println("提取的私钥为___:\n" + encodeBase64(privateKey.toString()));
         } catch (Exception e) {
             e.printStackTrace();

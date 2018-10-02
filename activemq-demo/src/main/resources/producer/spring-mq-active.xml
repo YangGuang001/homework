@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="activeMQConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="tcp://localhost:61616"/>
+        <property name="userName" value="admin"/>
+        <property name="password" value="admin"/>
+    </bean>
+
+    <bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <constructor-arg ref="activeMQConnectionFactory"/>
+        <property name="sessionCacheSize" value="100"/>
+    </bean>
+
+    <bean id="jmsQueueTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="cachingConnectionFactory"/>
+        <property name="pubSubDomain" value="false"/>
+    </bean>
+
+    <bean id="jmsTopicTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="cachingConnectionFactory"/>
+        <property name="pubSubDomain" value="true"/>
+        <property name="explicitQosEnabled" value="true"/>
+    </bean>
+
+    <bean id="messageQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg index="0" value="myqueue"/>
+    </bean>
+
+    <bean id="topivDestination" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg value="demoTopic"/>
+    </bean>
+
+    <bean id="messageListener" class="com.yang.activemq.consumer.ComsumerMessageListener"/>
+
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="cachingConnectionFactory"/>
+        <property name="destination" ref="topivDestination"/>
+        <property name="messageListener" ref="messageListener"/>
+    </bean>
+
+</beans>
