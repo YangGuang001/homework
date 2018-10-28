@@ -56,7 +56,7 @@ public class KafkaUtils {
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         consumer = new KafkaConsumer<>(props);
-        consumer.subscribe(Arrays.asList(Constants.TOPIC_NAME));
+//        consumer.subscribe(Arrays.asList(Constants.TOPIC_NAME));
     }
 
     /**
@@ -74,14 +74,14 @@ public class KafkaUtils {
      */
     public static void getMsgFromKafka(){
         while(true){
-            ConsumerRecords<String, String> records = KafkaUtils.getKafkaConsumer().poll(100);
-            if (records.count() > 0) {
-                for (ConsumerRecord<String, String> record : records) {
-                    JSONObject jsonAlarmMsg = JSON.parseObject(record.value());
-                    IpranAlarm alarmMsg = JSONObject.toJavaObject(jsonAlarmMsg, IpranAlarm.class);
-                    LOGGER.info("从kafka接收到的消息是：" + alarmMsg.toString());
-                }
-            }
+//            ConsumerRecords<String, String> records = KafkaUtils.getKafkaConsumer().poll(100);
+//            if (records.count() > 0) {
+//                for (ConsumerRecord<String, String> record : records) {
+//                    JSONObject jsonAlarmMsg = JSON.parseObject(record.value());
+//                    IpranAlarm alarmMsg = JSONObject.toJavaObject(jsonAlarmMsg, IpranAlarm.class);
+//                    LOGGER.info("从kafka接收到的消息是：" + alarmMsg.toString());
+//                }
+//            }
         }
     }
 
@@ -105,7 +105,7 @@ public class KafkaUtils {
         KafkaUtils.sendMsgToKafka(ipranAlarm);
         List<String> topic = new ArrayList<>();
         topic.add(Constants.TOPIC_NAME);
-        KafkaUtils.getKafkaConsumer().subscribe(topic);
+//        KafkaUtils.getKafkaConsumer().subscribe(topic);
         KafkaUtils.getMsgFromKafka();
     }
 }
