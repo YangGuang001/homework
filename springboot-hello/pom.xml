@@ -46,15 +46,37 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.github.core-lib.httpdoc</groupId>-->
+			<!--<artifactId>httpdoc-spring-boot</artifactId>-->
+			<!--<version>v1.6.2</version>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<!--<plugins>-->
+			<!--<plugin>-->
+				<!--<groupId>org.springframework.boot</groupId>-->
+				<!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+			<!--</plugin>-->
+			<!--<plugin>-->
+				<!--<groupId>com.google.cloud.tools</groupId>-->
+				<!--<artifactId>jib-maven-plugin</artifactId>-->
+				<!--<version>0.10.0</version>-->
+				<!--<configuration>-->
+					<!--<from>-->
+						<!--<image>jelastic/tomcat:8.5.34-jdk-1.8.0_181</image>-->
+					<!--</from>-->
+					<!--<to>-->
+						<!--<image>${project.name}</image>-->
+					<!--</to>-->
+					<!--<container>-->
+						<!--<mainClass>com.yang.springboot.hello.SpringbootHelloApplication</mainClass>-->
+					<!--</container>-->
+					<!--<useOnlyProjectCache>true</useOnlyProjectCache>-->
+				<!--</configuration>-->
+			<!--</plugin>-->
+		<!--</plugins>-->
 	</build>
 
 	<repositories>

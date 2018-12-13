@@ -7,17 +7,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.tan.model.Book;
 import com.tan.service.BookService;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping("/book.do")
 public class BookController {
 
     private BookService bookService;
-    @RequestMapping(params = "method=add")
-    public String add(Book book){
-        System.out.println("bookname:"+book.getName());
-        System.out.println("author:"+book.getAuthor());
-        bookService.add(book);
+
+
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public String add(){
+//        System.out.println("bookname:"+book.getName());
+//        System.out.println("author:"+book.getAuthor());
+//        bookService.add(book);
         return "success";
     }
     @RequestMapping(params = "method=update")
