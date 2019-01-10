@@ -87,4 +87,36 @@ public class FileOperator {
         System.out.println("size:" + list1.size() + "," + list1.size());
     }
 
+    @Test
+    public void testCommon() {
+        int[] a = {1,2,3};
+        char[] b = {'A', 'B', 'C', 'D'};
+
+        int ai = 0;
+        int bi = 0;
+
+        for (int i = 0, j = 0; i < 20; i++, j++) {
+            ai = i%a.length;
+            bi = j%b.length;
+            System.out.print(a[ai] + String.valueOf(b[bi]));
+            if (i != 0 &&(ai==0 && ai == bi)) {
+                System.out.println("\r\n");
+                System.out.println(i);
+                break;
+            }
+        }
+    }
+
+    @Test
+    public void testCountLimiter() {
+        CountLimiter countLimiter = new CountLimiter();
+        for (int i=0; i < 100000000; i++) {
+            if (countLimiter.limiterExecutor("my task")) {
+                System.out.println("my task " + i + " has send!" + " count: " + countLimiter.getCount());
+            } else {
+                System.out.println("my task " + i + " has refuse!" + " count: " + countLimiter.getCount());
+            }
+        }
+    }
+
 }

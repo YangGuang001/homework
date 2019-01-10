@@ -1,13 +1,13 @@
 package com.tan.controller;
 
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.tan.model.Book;
 import com.tan.service.BookService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/book.do")
@@ -16,8 +16,8 @@ public class BookController {
     private BookService bookService;
 
 
-    @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public String add(){
+    @RequestMapping(value = "/add", method = RequestMethod.PUT)
+    public String add(Book book, HttpServletRequest httpRequest){
 //        System.out.println("bookname:"+book.getName());
 //        System.out.println("author:"+book.getAuthor());
 //        bookService.add(book);

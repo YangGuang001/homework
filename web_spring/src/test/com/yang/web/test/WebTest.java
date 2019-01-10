@@ -1,7 +1,10 @@
 package com.yang.web.test;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tan.controller.BookController;
+import com.tan.model.Book;
 import com.tan.service.BookService;
+import org.apache.commons.collections.MultiHashMap;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +15,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -37,10 +42,13 @@ public class WebTest {
 
     @Test
     public void addBook() throws Exception {
+        MultiValueMap<String, String> valueMap = new LinkedMultiValueMap<String, String>();
+        valueMap.add("id", "11");
+        valueMap.add("name", "yang");
+        valueMap.add("author", "xin");
 //        OngoingStubbing<Void> when = (OngoingStubbing<Void>) when(bookService.add(new Book(1, "yangxinzhao", "yang")));
-         mockMvc.perform(get("/book.do/add")
-                .param("code","code-1001")
-                 .param("name","name-wangxindong"))
+         mockMvc.perform(put("/book.do/add")
+                 .params(valueMap))
                  .andDo(print());
         System.out.printf("aaaaaaaaaaaa");
     }
